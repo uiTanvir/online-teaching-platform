@@ -1,0 +1,361 @@
+/* prefix css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #f8f8ff;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* navigation */
+nav{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #116b6b;
+    transition: all 0.5s ease;
+}
+nav:hover{
+    background-color: #1a7d7d;
+}
+.nav-left{
+    width: 30%;
+}
+.nav-left li{}
+.nav-left li a{
+    color: white;
+    padding: 5px 15px;
+
+}
+.nav-left li a:hover{
+    color: white;
+    padding: 5px 15px;
+
+}
+.nav-right{
+    width: 70%;
+}
+.nav-menu{
+    justify-content: flex-end;
+}
+.nav-right li{}
+.nav-right li a{
+    color: white;
+    padding: 10px 15px;
+    transition: all 1s ease;
+
+}
+.nav-right li a:hover{
+    background-color: #2a8686;
+    border-radius: 10px;
+}
+/* post */
+.post-section{
+    min-height: 100vh;
+    padding-top: 20px;
+}
+.post-wrap{
+
+}
+.post-container{
+    width: 480px;
+    float: left;
+    background-color: ghostwhite;
+    padding: 10px;
+}
+.post-box{
+    border: 1px solid #1a7d7d;
+    padding: 30px 15px;
+    border-radius: 10px;
+    /* background-color: #1a7d7d; */
+    color: #000 !important;
+    transition: all 0.3s ease;
+    width: 460px;
+    height: 220px;
+}
+.post-box:hover{
+    box-shadow: 0px 0px 5px #4bb9ec;
+    background-color: #116b6b;
+    color: white !important;
+    border: 1px solid #116b6b;
+}
+.post-profile{
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 150px;
+}
+.post-profile img{
+    width: 50px;
+}
+.post-profile h5{
+    font-size: 14px;
+    /* color: #ffdcad; */
+    padding-top: 10px;
+}
+.post{
+    width: 100%;
+}
+.post-date{}
+.post-date span{
+    font-size: 15px;
+    /* color: #ddd; */
+    display: block;
+    padding-bottom: 5px;
+}
+.post h1{
+    font-size: 20px;
+    padding: 5px;
+    /* color: #ffdcad; */
+}
+.post p{
+    text-align: justify;
+    font-size: 17px;
+    /* color: #efefef; */
+}
+
+/* footer */
+.footer{
+    background-color: #116b6b;
+}
+.footer p{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+/* login form */
+.login-section{
+    min-height: 450px;
+}
+.form-container{
+    width: 500px;
+    margin: 200px auto;
+}
+.form-container input[type="text"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.form-container input[type="password"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.form-container input[type="submit"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.form-container input[type="submit"]:hover{
+    background-color: #116b6b;
+    color: #fff;
+}
+
+/* signup form */
+.signup-section{
+    min-height: 450px;
+}
+.form-container{
+    width: 500px;
+    margin: 0px auto;
+    padding: 160px 0 330px 0;
+}
+.form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.form-container input[type="submit"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.form-container input[type="submit"]:hover{
+    background-color: #116b6b;
+    color: #fff;
+}
+.form-container input[type="radio"],.form-container label{
+    font-size: 16px;
+}
+
+/* dashboard section */
+.dashboard-section{
+    padding: 190px;
+}
+.question-board{
+    padding: 15px;
+}
+.question-board form{
+    width: 450px;
+    margin: 0 auto;
+    display: grid;
+}
+.question-board form label{
+    font-size: 18px;
+    font-weight: 600;
+}
+.question-board form input[type="text"],.question-board form textarea{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.question-board form input[type="file"]{
+    width: 100%;
+    border: 0px solid #116b6b;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.question-board form input[type="submit"]{
+    width: 100%;
+    border: 1px solid #116b6b;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.question-board form input[type="submit"]:hover{
+    background-color: #116b6b;
+    color: #fff;
+}
+
+
+/* previous question */
+.previous-question{
+    padding: 15px 110px 0 0;
+    width: 480px;
+}
+.previous-question h1{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.previous-question ul{}
+.previous-question ul li{
+    display: flow-root;
+    margin-bottom: 3px;
+}
+.previous-question ul li a{
+    float: left;
+    font-size: 17px;
+}
+.previous-question ul li span{
+    float: right;
+    font-size: 17px;
+}
+
+/* profile */
+.profile-section{
+    padding: 100px 0 180px 0;
+}
+.profile{
+    width: 400px;
+    padding: 20px 0;
+    text-align: center;
+}
+.profile img{
+    width: 250px;
+}
+.profile h3{
+    font-size: 30px;
+}
+.profile h4{
+    font-size: 20px;
+}
+.profile h5{}
+.profile h5 a{
+    background-color: #4bb9ec;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #116b6b;
+    transition: all .5s ease;
+}
+.profile h5 a:hover{
+    background-color: #ffdcad;
+}
+.profile-details{
+    width: 560px;
+    padding: 100px 0 0 130px;
+}
+.profile-details ul{}
+.profile-details ul li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* instructor */
+.instructor-section{
+    height: 800px;
+    padding: 60px 0 0 0;
+}
+.instructor{
+    width: 220px;
+    text-align: center;
+    border: 1px solid #116b6b;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    border-radius: 10px;
+}
+.instructor img{
+    width: 100px;
+}
+.instructor h2{
+    font-size: 18px;
+}
+.instructor h4{
+    font-size: 17px;
+    font-weight: 100;
+}
+.instructor h5{
+    font-size: 15px;
+}
